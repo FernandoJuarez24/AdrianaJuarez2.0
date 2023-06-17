@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Adriana Juárez | Artista Gráfica</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/movil.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<!-- FONTAWESOME -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- FAVICON -->
+	<link rel="shortcut icon" href="icono.png" type="image/x-icon">	
+</head>
+
+<body>
+	<!-- LOADING -->
+    <div class="loading" id="loading">
+        <div class="lds-dual-ring"></div>
+    </div>
+
+	<header>
+		<!-- BARRA DE NAVEGACION -->
+		<div id="barra" class="shadow">
+			<div class="container">
+				<nav class="navbar navbar-expand-lg navbar-light">
+				  <div class="container-fluid">
+
+				  	<!-- MARCA -->
+				    <!--<a class="navbar-brand" href="#">Mi <span>Blog</span></a>-->
+
+				    <!-- BURGER -->
+				    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				      <span class="navbar-toggler-icon"></span>
+				    </button>
+
+				    <!-- MENU -->
+				    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				    	<div class="row">
+				    		<div class="col-md-6">
+				    			<div class="cont-menu">
+				    				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				    					<!-- LINK -->
+				        				<li class="nav-item me-md-4">
+				          					<a class="nav-link text-reset" aria-current="page" href="#">Home</a>
+				        				</li>
+
+				        				<!-- LINK -->
+				       					<li class="nav-item me-md-4">
+				          					<div class="dropdown">
+  												<a class="nav-link text-reset dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Ilustraciones</a>
+  												<ul class="dropdown-menu">
+  													<li>
+  														<a class="dropdown-item" href="#digital">Digitales</a>
+  													</li>
+  													<li>
+  														<a class="dropdown-item" href="#tradicional">Tradicionales</a>
+  													</li>
+  												</ul>
+											</div>
+				        				</li>
+
+				        				<!-- LINK -->
+				        				<li class="nav-item me-md-4">
+				          					<a class="nav-link text-reset" aria-current="page" href="#comision">Comisiones</a>
+				        				</li>
+
+				        				<!-- LINK -->
+				        				<li class="nav-item">
+				          					<a class="nav-link text-reset" aria-current="page" href="#conoceme">Conóceme</a>
+				        				</li>
+				    				</ul>
+				    			</div>				
+				    		</div>
+				    		<div class="col-md-6">
+				    			<div class="cont-redes">
+				    				<ul class="navbar-nav">
+							        	<li class="pe-md-4">
+								        	<a href=""><i class="fa-brands fa-instagram"></i></a>
+								        </li>
+
+								        <li>
+								        	<a href=""><i class="fa-brands fa-square-pinterest"></i></a>
+								        </li>
+							        </ul>
+				    			</div>					
+				    		</div>
+				    	</div>		
+				    </div>
+				  </div>
+				</nav>			
+			</div>
+		</div>
+
+		<!-- BIENVENIDA -->
+		<div id="bienvenida" class="d-flex flex-column justify-content-center align-items-center text-center">
+			<div id="contenedor">
+				<h1><span>Adriana</span> Juárez</h1>
+
+				<hr>
+
+				<p>Artista Gráfica</p>
+				<div id="digital"></div>
+			</div>
+		</div>	
+	</header>
+
+	<!-- DIGITALES -->
+	<section id="notaNon">
+		<div class="container">
+			<div class="row">
+				<!-- IMG -->
+				<div class="col-md-6">
+					<img src="img/portadas/ilustrator.webp" alt="" class="w-100">
+				</div>
+
+				<!-- TEXTO -->
+				<div class="col-md-6 d-flex flex-column justify-content-center align-items-end text-end ps-md-5 texto">
+					<!-- TITULO -->
+					<h2 class=""><span>Ilustraciones digitales</span></h2>
+
+					<hr>
+
+					<p class="mb-4">Creadas utilizando el software de diseño Adobe Ilustrator.</p>
+
+					<a href="ilustraciones-digitales.html">Saber más</a>
+					<div id="tradicional"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- TRADICIONALES -->
+	<section id="notaPar">
+		<div class="container">
+			<div class="row">
+				<!-- TEXTO -->
+				<div class="col-md-6 d-flex flex-column justify-content-center align-items-start pe-md-5 order-2 order-md-1 texto">
+					<!-- TITULO -->
+					<h2 class=""><span>Ilustraciones tradicionales</span></h2>
+
+					<hr>
+
+					<p class="mb-4">Realizadas a mano sobre papel Fabriano.</p>
+
+					<a href="ilustraciones-tradicionales.html">Saber más</a>
+					<div id="comision"></div>
+				</div>
+
+				<!-- IMG -->
+				<div class="col-md-6 order-1 order-md-2">
+					<img src="img/portadas/tradicional.webp"  alt="" class="w-100">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- COMISIONES -->
+	<section id="notaNon-comision">
+		<div class="container">
+			<div class="row">
+				<!-- IMG -->
+				<div class="col-md-6">
+					<img src="img/portadas/comision.webp" alt="" class="w-100">
+				</div>
+
+				<!-- TEXTO -->
+				<div class="col-md-6 d-flex flex-column justify-content-center align-items-end text-end ps-md-5 texto">
+					<!-- TITULO -->
+					<h2 class=""><span>Comisiones</span></h2>
+
+					<hr>
+
+					<p class="mb-4">Proyectos a medida.</p>
+
+					<a href="comisiones.html">Saber más</a>
+					<div id="conoceme"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ABOUT -->
+	<section id="about" class="">
+		<div class="container">
+
+			<!-- TEXTO -->
+			<div class="row">
+				<!-- ESPACIO -->
+				<div class="col-2"></div>
+
+				<!-- CONTENEDOR -->
+				<div class="col-md-8 d-flex flex-column justify-content-center align-items-center text-center text-light texto">
+					<h2>Hola! soy <span>Adriana Juárez</span> egresada de la carrera de Diseño Gráfico con especialidad en cominucación visual de la Universidad Mexicana</h2>
+
+					<p class="my-5">Me destaco realizando ilustraciones tradicionales y digitales, complementando con conocimientos en edición de audio y video</p>
+
+					<p class="mb-5">Las herramientas que utilizo para crear mis ilustraciones son los prgramas de Adoble (Illustrator y Photoshop) en conjunto de una tableta digital.</p>
+
+					<div id="iconosRedes" class="d-flex justify-content-center align-items-center">
+						<!-- FACEBOOK -->
+						<div>
+							<a href=""><i class="fa-brands fa-whatsapp"></i></a>
+						</div>
+
+						<!-- INSTAGRAM -->
+						<div class="ms-5">
+							<a href=""><i class="fa-regular fa-envelope"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<!-- ESPACIO -->
+				<div class="col-2"></div>
+			</div>
+		</div>
+	</section>
+
+	<!-- FOOTER -->
+	<footer id="footer" class="py-4">
+		<div class="container">
+			<div class="row">
+				<div class="co-12 d-flex flex-column justify-content-center align-items-center text-center text-light">
+					<h3 class="">Adriana Juárez Artista Gráfica | Derechos Reservados</h3>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+<!-- BOOTSTRAP Y POPPY -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+<script src="js/loading.js"></script>
+</body>
+</html>

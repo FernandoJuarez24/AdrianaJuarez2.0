@@ -1,0 +1,367 @@
+:root{
+  --purple: #B33771;
+  --oscuro:  #2f3640;
+}
+/* RESET */
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+.container-fluid{
+  padding:0 !important;
+}
+.row > *{
+  padding: 0 !important;
+}
+.row{
+  margin:0 !important;
+}
+h1,h2,h3{
+	margin:0 !important;
+}
+p{
+	margin:0 !important;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  overflow-x: hidden !important;
+  background-color: whitesmoke !important;
+  font-family: textos !important;
+}
+/* RESET */
+
+/* FUENTES */
+@font-face {
+    font-family: subTitulo;
+    src: url("../fuentes/JosefinSans-Medium.ttf");
+}
+
+@font-face {
+    font-family: titulo;
+    src: url("../fuentes/JosefinSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: textos;
+    src: url("../fuentes/JosefinSans-Light.ttf");
+}
+/* FUENTES */
+
+/* ESTILOS GENERALES */
+#bienvenida h1{
+  font-family: textos !important;
+  font-size: 5rem;
+}
+#bienvenida h1 span{
+  font-family: subTitulo !important;
+  color: var(--purple) !important;
+}
+#redes h2,
+#notaNon h2,
+#notaNon-comision h2,
+#notaPar h2,
+#about h2,
+#cuerpoNota h2,
+#interes h2{
+  font-size: 2rem !important;
+  font-family: subTitulo !important;
+}
+#notaNon h2 span,
+#notaNon-comision h2 span,
+#notaPar h2 span{
+  color:var(--purple);
+  font-size: 2.3rem;
+}
+#notaNon hr,
+#notaNon-comision hr,
+#notaPar hr{
+  width: 60%;
+  opacity: 1;
+  background-color: black;
+  margin: 1.5rem 0rem;
+}
+#notaNon p,
+#notaNon-comision p,
+#notaPar p{
+  font-size: 1.5rem;
+}
+#cuerpoNota h3,
+#interes h3{
+  font-size: 1.5rem !important;
+  font-family: subTitulo !important;
+}
+#bienvenida p{
+  font-family: textos !important;
+  font-size: 3rem !important;
+}
+#notaNon{
+  background-color: whitesmoke !important;
+}
+#notaPar{
+  background-color: whitesmoke !important;
+}
+#notaNon-comision{
+  background-color: white;
+}
+#notaNon a,
+#notaNon-comision a,
+#notaPar a{
+  font-family: subTitulo !important;
+  font-size: 1.5rem !important;
+  color: var(--purple) !important;
+  transition: 0.5s !important;
+}
+#notaNon a:hover,
+#notaNon-comision a:hover,
+#notaPar a:hover{
+  color: black !important;
+}
+#about p,
+#cuerpoNota p,
+#cuerpoNota ol li{
+  font-family: textos !important;
+  font-size: 1.5rem !important;
+}
+#about p span,
+#cuerpoNota p span{
+  font-family: subTitulo !important;
+}
+
+/* BARRA DE NAVEGACION */
+header{
+  background-color: white !important;
+}
+header #barra{
+  position: fixed !important;
+  width: 100% !important;
+  z-index: 999 !important;
+  background-color: white !important;
+}
+header #barra .navbar .navbar-brand{
+  font-size: 2rem !important;
+}
+header #barra .navbar .navbar-brand span{
+  font-family: SubTitulo !important;
+}
+header #barra .navbar .navbar-collapse .navbar-nav li a{
+  font-family: subTitulo !important;
+  font-size: 1.5rem !important;
+  color: black !important;
+  transition: 0.5s !important;
+}
+header #barra .navbar .navbar-collapse .navbar-nav li a:hover{
+  color: var(--purple) !important;
+}
+header #barra .navbar .navbar-collapse .row{
+  width: 100% !important;
+}
+header #barra .navbar .navbar-collapse .row .cont-redes{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  text-align: end;
+}
+header #barra .navbar .navbar-collapse .row .cont-redes i{
+  font-size: 2rem;
+}
+#bienvenida{
+  background-color: white !important;
+  padding-top: 4% !important;
+}
+#bienvenida #contenedor{
+  width: 90% !important;
+  padding: 6rem 0 !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#bienvenida #contenedor hr{
+  width: 40%;
+  opacity: 1;
+  background-color: black;
+}
+
+/* ABOUT */
+#about{
+  background-color: black !important;
+  background: url(../img/fondo.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding:8rem 0rem 6rem 0rem;
+}
+#about #iconosRedes a{
+  color:white;
+}
+#about #iconosRedes i{
+  font-size: 2.5rem !important;
+  transition: 0.5s !important;
+  cursor: pointer !important;
+}
+#about #iconosRedes i:hover{
+  transform: scale(1.1);
+}
+
+/* ILUSTRACIONES DIGITALES */
+.digitales{
+  background-color: whitesmoke;
+  padding:3rem 0rem;
+}
+.digitales #cuadro #IMG{
+  cursor:pointer  !important;
+  transition: 0.5s !important;
+  transform: rotate(-5deg);
+}
+.digitales #cuadro #IMG2{
+  cursor:pointer  !important;
+  transition: 0.5s !important;
+  transform: rotate(5deg);
+}
+.digitales #cuadro .IMG:hover,
+.digitales #cuadro .IMG2:hover{
+  transform: rotate(0deg) scale(1.1) !important;
+}
+.digitales h5{
+  font-family: subTitulo;
+  font-size: 1.3rem;
+}
+.digitales .modal-dialog{
+  max-width: 600px !important;
+}
+.digitales .galeria{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+#equipo .galeria .IMG{
+  width: 25% !important;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5) !important; 
+}
+.digitales #cuadro .contenedor{
+  padding-bottom:3rem !important;
+}
+.digitales .galeria .IMG{
+  width: 20%;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  border: 1px solid white !important;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5) !important; 
+  background-color: white !important;
+  padding: 1rem 1rem 0 1rem !important;
+  margin: 3rem .5rem 0rem !important;
+}
+.digitales .galeria .IMG h3{
+  font-size: 1.5rem !important;
+  font-family: subTitulo;
+  color:var(--purple);
+}
+.digitales .galeria .IMG h3 span{
+  font-size: 1.1rem !important;
+}
+.digitales .galeria .IMG .titulo h4{
+  background-color: white !important;
+  width: 100% !important;
+}
+.digitales .galeria .IMG > img{
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+.modal-header .row{
+  width: 100%;
+}
+.modal-header .row #titulo{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  text-align: start;
+}
+.modal-header .row #like{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.modal-header .row #like a{
+  font-family: subTitulo;
+  font-size: 1.3rem;
+  color:black;
+  text-decoration: none;
+  transition: .5s;
+}
+.modal-header .row #like a:hover{
+  opacity: .5;
+}
+.modal-header .row #btn-close{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  text-align: end;
+}
+/* ILUSTRACIONES DIGITALES */
+
+/* FOOTER */
+#footer{
+  background-color: black !important;
+}
+#footer h3{
+  font-size: 1rem;
+}
+
+/* PRELOADER */
+.loading{
+  width: 100%;
+  height: 100vh;
+  background: var(--purple);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: 100000;
+  clip-path: circle(100% at 50% 50%);
+  transition: clip-path 0.8s ease-in-out;
+}
+.loading2{
+  clip-path: circle(0% at 50% 50%);
+}
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: white transparent white transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
