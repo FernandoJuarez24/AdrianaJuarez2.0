@@ -297,14 +297,16 @@ header #barra .navbar .navbar-collapse .row .cont-redes i{
   align-items: center;
   text-align: center;
 }
-.modal-header .row #like a{
+.modal-header .row #like a,
+.modal-header .row #titulo a{
   font-family: subTitulo;
   font-size: 1.3rem;
   color:black;
   text-decoration: none;
   transition: .5s;
 }
-.modal-header .row #like a:hover{
+.modal-header .row #like a:hover,
+.modal-header .row #titulo a:hover{
   opacity: .5;
 }
 .modal-header .row #btn-close{
