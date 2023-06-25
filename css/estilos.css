@@ -56,7 +56,7 @@ body{
 /* ESTILOS GENERALES */
 #bienvenida h1{
   font-family: textos !important;
-  font-size: 5rem;
+  font-size: 4rem;
 }
 #bienvenida h1 span{
   font-family: subTitulo !important;
